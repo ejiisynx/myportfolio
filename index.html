@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Edgie Mae P. Baylon — BS IT Graduate, Web Developer & Photographer. Portfolio 2025.">
+  <title>Edgie Mae P. Baylon</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     SVG ICON SPRITES  (inline — zero CDN)
+     ══════════════════════════════════════ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><line x1="8" y1="6" x2="8.01" y2="6"/><line x1="16" y1="6" x2="16.01" y2="6"/><line x1="12" y1="6" x2="12.01" y2="6"/><line x1="8" y1="10" x2="8.01" y2="10"/><line x1="16" y1="10" x2="16.01" y2="10"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M3 9a2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0"/><path d="M5 11v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><rect x="9" y="14" width="6" height="6"/></symbol>
+  <symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7 12 2"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+  <symbol id="i-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-gh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-li" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+</svg>
+
+<!-- CURSOR -->
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="cring"></div>
+
+<!-- ══════════════════════════════
+     NAV
+     ══════════════════════════════ -->
+<nav id="mainNav">
+  <a href="#hero" class="nav-logo">EM.</a>
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+     Photo: assets/hero.jpg
+     ══════════════════════════════ -->
+<section id="hero">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-noise"></div>
+
+  <div class="hero-left">
+    <div class="hero-tag">Portfolio — 2025</div>
+    <div class="hero-name-wrap">
+      <h1 class="hero-title-big">
+        <span class="shadow-text" aria-hidden="true">EDGIE<br>MAE</span>
+        EDGIE<br>
+        <span class="outline-text">MAE</span>
+      </h1>
+    </div>
+    <p class="hero-title-italic">P. Baylon</p>
+    <div class="hero-roles">
+      <div class="hero-role-item">WEB DEVELOPER</div>
+      <div class="hero-role-item">BS IT GRADUATE</div>
+      <div class="hero-role-item">PHOTOGRAPHER</div>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-solid">
+        <svg class="ic" width="15" height="15"><use href="#i-arrow-down"/></svg> View Work
+      </a>
+      <a href="#contact" class="btn btn-ghost">
+        <svg class="ic" width="15" height="15"><use href="#i-mail"/></svg> Hire Me
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right" id="heroRight">
+    <div class="hero-photo-container" id="heroPhotoContainer">
+      <img class="hero-photo" src="assets/hero.jpg" alt="Edgie Mae P. Baylon"
+        onerror="this.parentElement.parentElement.style.background='linear-gradient(160deg,#1a0e10,#2a1418,#3d1520)';this.style.display='none'">
+      <div class="hero-photo-overlay"></div>
+    </div>
+    <div class="hero-right-label">IT<br>DEV</div>
+    <div class="hero-badge">
+      <div class="hero-badge-num">2025</div>
+      <div class="hero-badge-text">Portfolio</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- ══════════════════════════════
+     MARQUEE
+     ══════════════════════════════ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">WEB DEVELOPMENT</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">GRAPHIC DESIGN</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">PHOTOGRAPHY</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">PHP &amp; MYSQL</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">BS IT GRADUATE</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">VIDEO EDITING</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">WEB DEVELOPMENT</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">GRAPHIC DESIGN</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">PHOTOGRAPHY</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">PHP &amp; MYSQL</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">BS IT GRADUATE</span><span class="marquee-dot">✦</span>
+    <span class="marquee-item">VIDEO EDITING</span><span class="marquee-dot">✦</span>
+  </div>
+</div>
+<div class="marquee-strip marquee-row-2">
+  <div class="marquee-track-reverse">
+    <span class="marquee-item">MISAMIS ORIENTAL</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">ZAMBOANGA SIBUGAY</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">PHILIPPINES</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">OPEN TO WORK</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">MISAMIS ORIENTAL</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">ZAMBOANGA SIBUGAY</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">PHILIPPINES</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">OPEN TO WORK</span><span class="marquee-dot">·</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     ABOUT
+     Photo: assets/about.jpg
+     ══════════════════════════════ -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="section-eyebrow">Who I am</div>
+        <h2 class="section-heading">About <em>Me.</em></h2>
+        <div class="about-text">
+          <p>I'm Edgie Mae — a 23-year-old BS Information Technology graduate from Dr. Aurelio Mendoza Memorial Colleges, specializing in programming and web systems development.</p>
+          <p>I love building things that are both functional and beautiful. Whether writing clean PHP backends or designing a brand identity, I bring obsessive attention to quality in everything I create.</p>
+          <p>Beyond the keyboard, I'm a former freelance photographer — an eye for light, composition, and storytelling that carries into all my work.</p>
+        </div>
+        <div class="about-divider"></div>
+        <div class="about-facts">
+          <div class="fact-card">
+            <div class="about-fact-num">3+</div>
+            <div class="about-fact-label">Years exp.</div>
+          </div>
+          <div class="fact-card">
+            <div class="about-fact-num">3</div>
+            <div class="about-fact-label">Roles held</div>
+          </div>
+          <div class="fact-card">
+            <div class="about-fact-num">∞</div>
+            <div class="about-fact-label">Curiosity</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-photo-block reveal-right" id="aboutPhotoBlock">
+        <div class="photo-3d-wrap" id="photo3d">
+          <div class="about-photo-frame">
+            <img src="assets/about.jpg" alt="Edgie Mae Baylon"
+              onerror="this.style.display='none'">
+            <div class="photo-shine" id="photoShine"></div>
+          </div>
+          <div class="photo-corner tl"></div>
+          <div class="photo-corner tr"></div>
+          <div class="photo-corner bl"></div>
+          <div class="photo-corner br"></div>
+          <div class="about-photo-badge">
+            <div class="badge-num">BS IT</div>
+            <div class="badge-text">Programming</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SKILLS
+     ══════════════════════════════ -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="skills-layout">
+      <div class="reveal-left">
+        <div class="section-eyebrow">What I do</div>
+        <h2 class="section-heading">Skills<br><em>&amp; Tools.</em></h2>
+        <p>From full-stack web systems to visual design and photography — I thrive where technical skill meets creative vision.</p>
+      </div>
+      <div class="skills-groups reveal d2">
+        <div>
+          <div class="skill-group-label"><svg class="ic" width="13" height="13"><use href="#i-globe"/></svg> Web Development</div>
+          <div class="skill-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+            <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label"><svg class="ic" width="13" height="13"><use href="#i-tool"/></svg> Productivity &amp; Tools</div>
+          <div class="skill-tags">
+            <span class="tag">MS Excel</span><span class="tag">MS Word</span><span class="tag">Google Workspace</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label"><svg class="ic" width="13" height="13"><use href="#i-palette"/></svg> Creative</div>
+          <div class="skill-tags">
+            <span class="tag">Graphic Design</span><span class="tag">Video Editing</span><span class="tag">Photography</span>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label"><svg class="ic" width="13" height="13"><use href="#i-users"/></svg> Soft Skills</div>
+          <div class="skill-tags">
+            <span class="tag">Leadership</span><span class="tag">Communication</span>
+            <span class="tag">Fast learner</span><span class="tag">Multitasking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     EXPERIENCE
+     ══════════════════════════════ -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">Career</div>
+    <h2 class="section-heading reveal d1">Where I've <em>Worked.</em></h2>
+    <div class="exp-list">
+
+      <div class="exp-item reveal d1">
+        <div class="exp-date">NOV 2025<br>MAR 2026</div>
+        <div>
+          <div class="exp-role">OJT Intern</div>
+          <div class="exp-company"><svg class="ic" width="13" height="13"><use href="#i-building"/></svg> Dept. of Agrarian Reform P.O. · Ipil, Zamboanga Sibugay</div>
+          <div class="exp-desc">Gained hands-on government office experience, applying IT skills in a real-world public service setting and supporting day-to-day operations.</div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal d2">
+        <div class="exp-date">FEB 2024<br>JUL 2025</div>
+        <div>
+          <div class="exp-role">Graphic Designer</div>
+          <div class="exp-company"><svg class="ic" width="13" height="13"><use href="#i-store"/></svg> Macky's Food Hub – Siomai King · Kabasalan, Zamboanga Sibugay</div>
+          <div class="exp-desc">Designed marketing materials, branding assets, and promotional visuals — balancing creativity with commercial goals of a growing food business.</div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal d3">
+        <div class="exp-date">NOV 2023<br>PRESENT</div>
+        <div>
+          <div class="exp-role">SK Secretary</div>
+          <div class="exp-company"><svg class="ic" width="13" height="13"><use href="#i-landmark"/></svg> Sangguniang Kabataan · Pilar, Diplahan, Zamboanga Sibugay</div>
+          <div class="exp-desc">Handles documentation, communications, and administrative tasks for the youth council — demonstrating leadership and community engagement.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     PROJECTS — 3-IMAGE GALLERY + LIGHTBOX VIEWER
+     ══════════════════════════════════════════════
+     HOW TO ADD YOUR PHOTOS:
+     Put your images in the assets/ folder.
+
+     Project 1 (Capstone):   p1a.jpg  p1b.jpg  p1c.jpg
+     Project 2 (Branding):   p2a.jpg  p2b.jpg  p2c.jpg
+     Project 3 (Photography):p3a.jpg  p3b.jpg  p3c.jpg
+     Project 4 (Portfolio):  p4a.jpg  p4b.jpg  p4c.jpg
+
+     The (a) image is the card main image.
+     All 3 open in the fullscreen lightbox.
+     Clicking thumbnails previews before opening.
+     ════════════════════════════════════════ -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">Portfolio</div>
+    <h2 class="section-heading reveal d1">Things I've <em>Built.</em></h2>
+    <div class="bento">
+
+      <!-- PROJECT 1 -->
+      <div class="bento-card reveal d1" data-tilt
+           data-project="Capstone Web System"
+           data-imgs='["assets/p1a.jpg","assets/p1b.jpg","assets/p1c.jpg"]'>
+        <div class="bento-shine"></div>
+        <div class="bento-num">01</div>
+        <div class="proj-main-img" data-open-lb>
+          <img src="assets/p1a.jpg" alt="Capstone Web System"
+            onerror="this.src='';this.parentElement.style.background='linear-gradient(135deg,#1a0e10,#2a1418)';this.style.display='none'">
+          <div class="proj-count"><svg class="ic" width="11" height="11"><use href="#i-img"/></svg> 3 photos</div>
+          <div class="proj-zoom-hint"><svg class="ic" width="11" height="11"><use href="#i-zoom"/></svg> View gallery</div>
+        </div>
+        <div class="proj-thumbs">
+          <div class="proj-thumb active" data-idx="0">
+            <img src="assets/p1a.jpg" alt="Preview 1" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">1</span>
+          </div>
+          <div class="proj-thumb" data-idx="1">
+            <img src="assets/p1b.jpg" alt="Preview 2" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">2</span>
+          </div>
+          <div class="proj-thumb" data-idx="2">
+            <img src="assets/p1c.jpg" alt="Preview 3" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">3</span>
+          </div>
+        </div>
+        <div class="bento-body">
+          <div class="bento-type">Web System</div>
+          <div class="bento-title">Capstone Web System</div>
+          <div class="bento-desc">Full-stack web system — clean frontend, robust PHP/MySQL backend, built as my BS IT capstone project.</div>
+          <div class="bento-stack">
+            <span class="stack-tag">PHP</span><span class="stack-tag">MySQL</span>
+            <span class="stack-tag">HTML/CSS</span><span class="stack-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="bento-card reveal d2" data-tilt
+           data-project="Siomai King Branding"
+           data-imgs='["assets/p2a.jpg","assets/p2b.jpg","assets/p2c.jpg"]'>
+        <div class="bento-shine"></div>
+        <div class="bento-num">02</div>
+        <div class="proj-main-img" data-open-lb>
+          <img src="assets/p2a.jpg" alt="Siomai King Branding"
+            onerror="this.src='';this.parentElement.style.background='linear-gradient(135deg,#1a0e10,#2a1418)';this.style.display='none'">
+          <div class="proj-count"><svg class="ic" width="11" height="11"><use href="#i-img"/></svg> 3 photos</div>
+          <div class="proj-zoom-hint"><svg class="ic" width="11" height="11"><use href="#i-zoom"/></svg> View gallery</div>
+        </div>
+        <div class="proj-thumbs">
+          <div class="proj-thumb active" data-idx="0">
+            <img src="assets/p2a.jpg" alt="Preview 1" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">1</span>
+          </div>
+          <div class="proj-thumb" data-idx="1">
+            <img src="assets/p2b.jpg" alt="Preview 2" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">2</span>
+          </div>
+          <div class="proj-thumb" data-idx="2">
+            <img src="assets/p2c.jpg" alt="Preview 3" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">3</span>
+          </div>
+        </div>
+        <div class="bento-body">
+          <div class="bento-type">Graphic Design</div>
+          <div class="bento-title">Siomai King Branding</div>
+          <div class="bento-desc">Cohesive brand identity — menus, signage, and social media graphics for a local food business.</div>
+          <div class="bento-stack">
+            <span class="stack-tag">Branding</span><span class="stack-tag">Print</span><span class="stack-tag">Social Media</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="bento-card reveal d2" data-tilt
+           data-project="Freelance Photography"
+           data-imgs='["assets/p3a.jpg","assets/p3b.jpg","assets/p3c.jpg"]'>
+        <div class="bento-shine"></div>
+        <div class="bento-num">03</div>
+        <div class="proj-main-img" data-open-lb>
+          <img src="assets/p3a.jpg" alt="Freelance Photography"
+            onerror="this.src='';this.parentElement.style.background='linear-gradient(135deg,#1a0e10,#2a1418)';this.style.display='none'">
+          <div class="proj-count"><svg class="ic" width="11" height="11"><use href="#i-img"/></svg> 3 photos</div>
+          <div class="proj-zoom-hint"><svg class="ic" width="11" height="11"><use href="#i-zoom"/></svg> View gallery</div>
+        </div>
+        <div class="proj-thumbs">
+          <div class="proj-thumb active" data-idx="0">
+            <img src="assets/p3a.jpg" alt="Preview 1" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">1</span>
+          </div>
+          <div class="proj-thumb" data-idx="1">
+            <img src="assets/p3b.jpg" alt="Preview 2" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">2</span>
+          </div>
+          <div class="proj-thumb" data-idx="2">
+            <img src="assets/p3c.jpg" alt="Preview 3" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">3</span>
+          </div>
+        </div>
+        <div class="bento-body">
+          <div class="bento-type">Photography</div>
+          <div class="bento-title">Freelance Photography</div>
+          <div class="bento-desc">Events, portraits, candid moments — years of freelance work capturing life through a lens.</div>
+          <div class="bento-stack">
+            <span class="stack-tag">Events</span><span class="stack-tag">Portraits</span><span class="stack-tag">Editing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="bento-card reveal d3" data-tilt
+           data-project="Personal Portfolio"
+           data-imgs='["assets/p4a.jpg","assets/p4b.jpg","assets/p4c.jpg"]'>
+        <div class="bento-shine"></div>
+        <div class="bento-num">04</div>
+        <div class="proj-main-img" data-open-lb>
+          <img src="assets/p4a.jpg" alt="Personal Portfolio"
+            onerror="this.src='';this.parentElement.style.background='linear-gradient(135deg,#1a0e10,#2a1418)';this.style.display='none'">
+          <div class="proj-count"><svg class="ic" width="11" height="11"><use href="#i-img"/></svg> 3 photos</div>
+          <div class="proj-zoom-hint"><svg class="ic" width="11" height="11"><use href="#i-zoom"/></svg> View gallery</div>
+        </div>
+        <div class="proj-thumbs">
+          <div class="proj-thumb active" data-idx="0">
+            <img src="assets/p4a.jpg" alt="Preview 1" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">1</span>
+          </div>
+          <div class="proj-thumb" data-idx="1">
+            <img src="assets/p4b.jpg" alt="Preview 2" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">2</span>
+          </div>
+          <div class="proj-thumb" data-idx="2">
+            <img src="assets/p4c.jpg" alt="Preview 3" onerror="var p=this.parentElement;p.classList.add('empty');this.remove();p.innerHTML='<svg width=16 height=16 viewBox=\'0 0 24 24\' fill=none stroke=\'%23C9454D\' stroke-width=1.5><rect x=3 y=3 width=18 height=18 rx=2/><circle cx=8.5 cy=8.5 r=1.5/><polyline points=\'21 15 16 10 5 21\'/></svg>'">
+            <span class="proj-thumb-num">3</span>
+          </div>
+        </div>
+        <div class="bento-body">
+          <div class="bento-type">Responsive Web</div>
+          <div class="bento-title">Personal Portfolio</div>
+          <div class="bento-desc">A bold, magazine-style portfolio with 3D motion — designed to be as distinctive as the work it showcases.</div>
+          <div class="bento-stack">
+            <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span>
+            <span class="stack-tag">JavaScript</span><span class="stack-tag">Responsive</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /bento -->
+  </div>
+</section>
+
+<!-- LIGHTBOX VIEWER -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lb-backdrop" id="lbBackdrop"></div>
+  <div class="lb-container">
+    <div class="lb-bar">
+      <div>
+        <div class="lb-title" id="lbTitle"></div>
+        <div class="lb-counter" id="lbCounter"></div>
+      </div>
+      <button class="lb-close" id="lbClose" aria-label="Close">
+        <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="lb-main">
+      <button class="lb-arrow prev" id="lbPrev" aria-label="Previous">
+        <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <img id="lbImg" src="" alt="Gallery image">
+      <button class="lb-arrow next" id="lbNext" aria-label="Next">
+        <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+    <div class="lb-thumbs" id="lbThumbs"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     SOCIAL
+     Replace YOUR_USERNAME below!
+     ══════════════════════════════ -->
+<div id="social">
+  <div class="social-inner reveal">
+    <div class="social-headline">Let's<br><em>Connect.</em></div>
+    <div class="social-links-row">
+      <a href="https://facebook.com/YOUR_USERNAME" target="_blank" rel="noopener" class="social-pill">
+        <svg class="ic" width="18" height="18"><use href="#i-fb"/></svg> Facebook
+      </a>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener" class="social-pill">
+        <svg class="ic" width="18" height="18"><use href="#i-gh"/></svg> GitHub
+      </a>
+      <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener" class="social-pill">
+        <svg class="ic" width="18" height="18"><use href="#i-li"/></svg> LinkedIn
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     CONTACT
+     ══════════════════════════════ -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-eyebrow reveal">Get in touch</div>
+    <h2 class="section-heading reveal d1">Let's Work <em>Together.</em></h2>
+    <div class="contact-layout">
+      <div class="reveal-left d1">
+        <p>Whether you need a web system, a designer's eye, or someone who can do both — I'd love to hear from you.</p>
+        <div class="contact-details">
+          <a href="mailto:theeggiemae@gmail.com" class="contact-row">
+            <svg class="ic" width="18" height="18"><use href="#i-mail"/></svg> theeggiemae@gmail.com
+          </a>
+          <a href="tel:09957551162" class="contact-row">
+            <svg class="ic" width="18" height="18"><use href="#i-phone"/></svg> 0995 755 1162
+          </a>
+          <div class="contact-row" style="cursor:default">
+            <svg class="ic" width="18" height="18"><use href="#i-pin"/></svg> Igpit, Opol, Misamis Oriental
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right d2">
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="fn">Your name</label>
+            <input id="fn" type="text" class="form-input" placeholder="Jane Dela Cruz">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fe">Email address</label>
+            <input id="fe" type="email" class="form-input" placeholder="you@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fm">Message</label>
+            <textarea id="fm" class="form-textarea" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="form-submit" id="sendBtn">
+            <span>
+              <svg class="ic" width="16" height="16"><use href="#i-send"/></svg> Send message
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+     ══════════════════════════════ -->
+<footer>
+  <span class="footer-logo">EM.</span>
+  <div class="footer-line"></div>
+  <span class="footer-copy">© 2025 Edgie Mae P. Baylon · BS IT Graduate · Web Developer · Photographer</span>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+</body>
+</html>
